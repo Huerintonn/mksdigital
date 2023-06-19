@@ -241,36 +241,34 @@ body {
 
 .textos-lgpd {
     align-self: center;
-    padding: 0 10rem;
+    padding: 0 5rem;
 }
 
 .texto-lgpd-principal {
 
-    font-size: 4rem;
+    font-size: 2vw;
     color: #ffffff;
     text-align: justify;
-    line-height: 5rem;
-    margin-bottom: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
 }
 
 .texto-lgpd-complementar {
-
     color: var(--roxo-principal);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1.5vw;
     text-align: justify;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 
 .img-lgpd {
-    width: 70%;
-    height: 70%;
-    margin-right: 10rem;
+    width: 100%;
+
+
 }
 
 .foguete {
     width: 100%;
-    height: 100%;
 }
 
 /*FINAL*/
