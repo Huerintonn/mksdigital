@@ -24,43 +24,31 @@ body {
     font-family: sans-serif;
 }
 
-/*.box-topo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--roxo-principal);
-    border-radius: 0 0 0 100px;
-    margin-left: 10rem;
-    height: 70vh;
-}*/
-
 .box-topo {
     text-align: right;
 }
 
 .img-topo {
     width: 100%;
-
-
 }
 
 /*SOBRE NÓS*/
+
 .sobrenos {
-    display: flex;
-    margin-bottom: 50rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1920x;
+    margin: 5% auto 15% auto;
 }
 
 .titulo-sobrenos {
-    align-self: center;
-    margin: 15rem 0 0 15rem;
-    padding: 10rem;
-    width: 60%;
+    padding: 25%;
+
 }
 
-
 .quadrados-roxo {
-    width: 10vw;
-    margin-bottom: 5rem;
+    width: 8vw;
+    margin-bottom: 50px;
 }
 
 .titulo-sobrenos h1 {
@@ -76,46 +64,47 @@ body {
 
 .baloom {
     position: absolute;
-    width: 60%;
-    top: 60vh;
     right: 0;
-
+    width: 60%;
 }
 
 .conteudo-baloom {
-    position: inherit;
+    position: absolute;
+    right: 0;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    top: auto;
-
 }
 
 .icon-baloom {
+    position: absolute;
     width: 10%;
-    padding-top: 8vw;
-    padding-right: 10rem;
+    top: 15%;
+    right: 4vw;
+    padding: 1rem;
 }
 
 .texto-sobrenos {
-    padding: 1rem 10rem 0 10rem;
-    font-size: 1.5vw;
+    width: 80%;
+    padding: 15vw 2vh;
+    margin: auto;
     color: #546e8e;
+    font-size: 1.7vw;
     text-align: justify;
-    line-height: 2.5vw;
-
+    line-height: 2vw;
 }
 
 /*ATUAÇÃO*/
 
+#pg3 {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 .titulo-atuacao {
     justify-content: center;
     display: flex;
-    gap: 8rem;
-    align-self: center;
+    gap: 50px;
     padding: 1rem;
-    margin: auto;
 }
 
 .titulo-atuacao h2 {
@@ -129,16 +118,14 @@ body {
     padding: 3px 0;
     border-radius: 30px;
     background-color: var(--roxo-principal);
-    margin: 10rem auto;
+    margin: 100px auto;
     width: 80%;
 }
 
 .container-atuacao {
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
     margin: auto;
 }
 
@@ -146,40 +133,42 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
     list-style: none;
-    gap: 5rem;
     margin-bottom: 1rem;
 }
 
-.card-atuacao {
-    border: solid 3px var(--roxo-principal);
-    border-radius: 10px;
-    min-width: 350px;
-    max-width: 350px;
-    min-height: 380px;
-    background-color: var(--branco);
-    padding: 5rem;
 
+.card-atuacao {
+    display: flex;
+    border: solid 3px var(--roxo-principal);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 150px;
+    background-color: var(--branco);
+    margin: 0.5rem;
+    padding: 1.5rem;
 }
 
 .card-atuacao h2 {
-    font-size: 50px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--roxo-principal);
 }
 
 .btn-saiba-mais {
-
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
     color: var(--roxo-principal);
     cursor: pointer;
     background-color: var(--branco);
-    border: solid 2px var(--roxo-principal);
-    border-radius: 30px;
+    border: solid 1px var(--roxo-principal);
+    border-radius: 100px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13px;
 
 }
 
@@ -198,19 +187,23 @@ body {
     font-size: 0vw;
 }
 
+.icon-atuacao{
+    width: 55px;
+}
 
 /* CLASSE ACTIVE*/
 
 .active {
-    width: 400px;
-    height: 600px;
-    padding-bottom: 2rem;
+    max-width: 350px;
+    width: 350px;
+    height: 370px;
 }
 
 .active .descricao-atuacao {
     display: block;
-    font-size: 28px;
-    padding: 1rem 1.5rem  1rem 0;
+    font-size: 15px;
+    text-align: left;
+    padding: 1rem 0 1rem 1rem;
 }
 
 .active .fechar {
@@ -222,64 +215,66 @@ body {
 }
 
 .atuacao {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 /*LGPD*/
 
-.lgpd {
-    display: flex;
-    flex: 1;
-    gap: 5rem;
-    justify-content: space-around;
-    align-items: center;
+#pg4 {
     margin-bottom: 5rem;
 }
 
+.lgpd {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 150px;
+}
+
 .textos-lgpd {
+    width: 80%;
     align-self: center;
-    padding: 0 5rem;
 }
 
 .texto-lgpd-principal {
-
-    font-size: 2vw;
+    font-size: 35px;
     color: #ffffff;
     text-align: justify;
-    line-height: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .texto-lgpd-complementar {
+    font-size: 30px;
     color: var(--roxo-principal);
     font-weight: bold;
-    font-size: 1.5vw;
     text-align: justify;
-    line-height: 3rem;
 }
 
 .img-lgpd {
-    width: 100%;
-
-
-}
-
-.foguete {
-    width: 100%;
+    width: 50%;
 }
 
 /*FINAL*/
 
 .final {
+
+    background-color: var(--branco);
+}
+
+.final-conteudo {
+    max-width: 1920px;
+    margin: 1rem auto;
     display: flex;
-    gap: 15rem;
-    padding: 15rem;
+    gap: 10rem;
+    padding: 10rem;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--branco);
 }
 
 .textos-finais {
@@ -293,14 +288,34 @@ body {
 }
 
 .box-converse {
-    margin-bottom: 5rem;
+    margin: 2rem 0;
+    width: 90%;
 }
 
 .texto-rosa {
-    font-size: 4rem;
+    font-size: 50px;
     font-weight: bold;
     color: #cb007a;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-whats {
+    margin-top: 1rem;
+    padding: 2rem;
+    color: var(--roxo-principal);
+    cursor: pointer;
+    background-color: var(--roxo-principal);
+    border-radius: 100px;
+}
+
+.btn-whats a {
+    font-size: 30px;
+    color: var(--branco);
+}
+
+.btn-whats:hover {
+    background-color: var(--roxo-principal);
+    background-color: #7a26b2;
 }
 
 /*RODAPÉ*/
@@ -312,7 +327,6 @@ body {
     gap: 5rem;
     background-color: var(--roxo-principal);
     padding: 10rem;
-
 }
 
 
