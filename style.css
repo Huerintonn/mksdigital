@@ -22,6 +22,7 @@ html {
 body {
     background-color: var(--amarelo-principal);
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .box-topo {
@@ -104,7 +105,7 @@ body {
     justify-content: center;
     display: flex;
     gap: 50px;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .titulo-atuacao h2 {
@@ -115,10 +116,10 @@ body {
 
 .line {
     justify-content: center;
-    padding: 3px 0;
+    padding: 2px 0;
     border-radius: 30px;
     background-color: var(--roxo-principal);
-    margin: 100px auto;
+    margin: 50px auto;
     width: 80%;
 }
 
@@ -187,7 +188,7 @@ body {
     font-size: 0vw;
 }
 
-.icon-atuacao{
+.icon-atuacao {
     width: 55px;
 }
 
@@ -214,12 +215,17 @@ body {
     display: none;
 }
 
+.active .btn-saiba-mais {
+    margin-top: 0;
+}
+
 .atuacao {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 2rem;
 }
+
 
 /*LGPD*/
 
@@ -228,36 +234,41 @@ body {
 }
 
 .lgpd {
-    max-width: 1600px;
-    margin: 0 auto;
     display: flex;
-
-    justify-content: space-around;
+    max-width: 1920px;
+    margin: 0 auto;
     align-items: center;
+    justify-content: center;
+    gap: 100px;
     padding: 150px;
+
 }
 
 .textos-lgpd {
-    width: 80%;
-    align-self: center;
+    width: 600px;
 }
 
 .texto-lgpd-principal {
-    font-size: 35px;
+    font-size: 25px;
     color: #ffffff;
     text-align: justify;
     margin-bottom: 2rem;
 }
 
 .texto-lgpd-complementar {
-    font-size: 30px;
+    font-size: 20px;
     color: var(--roxo-principal);
     font-weight: bold;
     text-align: justify;
 }
 
+.imgs-lgpd {
+    display: block;
+    max-width: 300px;
+}
+
 .img-lgpd {
-    width: 50%;
+    width: 200px
 }
 
 /*FINAL*/
@@ -268,13 +279,13 @@ body {
 }
 
 .final-conteudo {
-    max-width: 1920px;
-    margin: 1rem auto;
     display: flex;
-    gap: 10rem;
-    padding: 10rem;
+    max-width: 1920px;
+    margin: 0 auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
+    padding: 150px;
 }
 
 .textos-finais {
@@ -283,17 +294,17 @@ body {
 }
 
 .globo {
-    width: 40%;
-    height: 40%;
+    width: 450px;
+    height: auto;
 }
 
 .box-converse {
-    margin: 2rem 0;
-    width: 90%;
+    margin-bottom: 2rem;
+    width: 350px;
 }
 
 .texto-rosa {
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bold;
     color: #cb007a;
     margin-bottom: 2rem;
@@ -301,15 +312,15 @@ body {
 
 .btn-whats {
     margin-top: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     color: var(--roxo-principal);
     cursor: pointer;
     background-color: var(--roxo-principal);
-    border-radius: 100px;
+    border-radius: 30px;
 }
 
 .btn-whats a {
-    font-size: 30px;
+    font-size: 1, 5rem;
     color: var(--branco);
 }
 
@@ -321,18 +332,30 @@ body {
 /*RODAPÉ*/
 
 .rodape {
-    display: flex;
+    max-width: 1920px;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
     justify-content: center;
-    flex: 1;
-    gap: 5rem;
+    padding: 150px;
     background-color: var(--roxo-principal);
-    padding: 10rem;
 }
 
+.marca-rodape {
+    width: 350px;
+}
+
+.contatos {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
 .icon {
     margin: 0.5rem;
     margin-bottom: 1rem;
+    width: 35px;
 }
 
 .icon:hover {
@@ -341,7 +364,7 @@ body {
 
 .redes-sociais h3 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 20px;
     font-weight: bold;
     color: var(--branco);
     letter-spacing: .5rem;
@@ -356,9 +379,8 @@ body {
 }
 
 .endereco p {
-    text-align: end;
     color: var(--branco);
-    font-size: 2rem;
+    font-size: 20px;
 }
 
 a {
@@ -367,4 +389,644 @@ a {
 
 .endereco p:hover {
     color: var(--amarelo-principal);
+}
+
+
+/* RESPONSIVIDADES*/
+
+@media screen and (max-width: 1080px) {
+
+    /* Sobre Nós */
+
+    .sobrenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .titulo-sobrenos {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 5%;
+    }
+
+
+    .titulo-sobrenos h1 {
+        font-size: 4vw;
+
+    }
+
+    .quadrados-roxo {
+        width: 10vw;
+    }
+
+
+    .baloom {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .conteudo-baloom {
+        display: flex;
+        flex-direction: column;
+        margin: 2% auto;
+
+    }
+
+    .icon-baloom {
+        position: absolute;
+        width: 10%;
+        top: 15%;
+        right: 4vw;
+        padding: 1rem;
+    }
+
+    .texto-sobrenos {
+        padding: 18vw 2vh;
+    }
+
+    /*ATUAÇÃO*/
+
+    #pg3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .titulo-atuacao {
+        margin-top: 100px;
+    }
+
+
+    .titulo-atuacao h2 {
+        font-size: 4vw;
+    }
+
+    .lista-servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    .card-atuacao {
+        display: flex;
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 180px;
+        background-color: var(--branco);
+        padding: 15px;
+
+    }
+
+    .card-atuacao h2 {
+        font-size: 18px;
+    }
+
+    /* CLASSE ACTIVE*/
+
+    .active {
+        max-width: 350px;
+        width: 350px;
+        height: 350px;
+    }
+
+    /*LGPD*/
+
+    .lgpd {
+        display: flex;
+        flex-direction: column;
+        max-width: 1080px;
+        padding: 50px;
+    }
+
+    .textos-lgpd {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .imgs-lgpd {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .img-lgpd {
+        width: 250px
+    }
+
+
+    /*FINAL*/
+
+    .final-conteudo {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        padding: 150px;
+    }
+
+    .textos-finais {
+        display: flex;
+    }
+
+    .globo {
+        width: 350px;
+        height: auto;
+    }
+
+    .box-converse {
+        margin-bottom: 2rem;
+        width: 250px;
+    }
+
+    .texto-rosa {
+        font-size: 22px;
+        font-weight: bold;
+        color: #cb007a;
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* RESPONSIVIDADES*/
+
+@media screen and (max-width: 920px) {
+
+    /*ATUAÇÃO*/
+
+    #pg3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .titulo-atuacao {
+        margin-top: 100px;
+    }
+
+
+    .titulo-atuacao h2 {
+        font-size: 4vw;
+    }
+
+    .lista-servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    .card-atuacao {
+        display: flex;
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 120px;
+        background-color: var(--branco);
+        padding: 10px;
+
+    }
+
+    .card-atuacao h2 {
+        font-size: 15px;
+    }
+
+    .icon-atuacao {
+        width: 40px;
+    }
+
+    /*LGPD*/
+
+    .lgpd {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textos-lgpd {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    /*ATUAÇÃO*/
+
+    #pg3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .titulo-atuacao {
+        margin-top: 100px;
+    }
+
+
+    .titulo-atuacao h2 {
+        font-size: 4vw;
+    }
+
+    .lista-servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    .card-atuacao {
+        display: flex;
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        background-color: var(--branco);
+        padding: 10px;
+
+    }
+
+    .card-atuacao h2 {
+        font-size: 15px;
+    }
+
+    .icon-atuacao {
+        width: 40px;
+    }
+
+
+    /* CLASSE ACTIVE*/
+
+    .active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 450px;
+        width: 450px;
+        backdrop-filter: blur(5px);
+        border: solid 3px var(--roxo-principal);
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        padding: 2% 10%;
+        background-color: rgba(255, 255, 255, 0.6);
+        /* Fundo com transparência */
+        backdrop-filter: blur(15px);
+        /* Desfoque do fundo */
+        z-index: 1020;
+    }
+
+    .active h2 {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .active .descricao-atuacao {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .active .fechar {
+        display: block;
+    }
+
+    .active .saiba-mais {
+        display: none;
+    }
+
+    .active .icon-atuacao {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    /*FINAL*/
+    .final-conteudo {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .globo {
+        display: none;
+    }
+
+    .box-converse {
+        width: 300px;
+    }
+
+    /*RODAPÉ*/
+
+    .rodape {
+        text-align: center;
+        padding: 90px;
+    }
+
+    .marca-rodape {
+        width: 300px;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    /*ATUAÇÃO*/
+
+    .titulo-atuacao {
+        margin-top: 50px;
+    }
+
+
+    .titulo-atuacao h2 {
+        font-size: 4vw;
+    }
+
+    .lista-servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+
+    }
+
+    .card-atuacao {
+        display: flex;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 1px;
+        margin: 0.2rem;
+
+    }
+
+    .card-atuacao h2 {
+        font-size: 15px;
+    }
+
+    .icon-atuacao {
+        width: 40px;
+    }
+
+    .btn-saiba-mais {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        color: var(--roxo-principal);
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0);
+        border: solid 1px var(--roxo-principal);
+        border-radius: 100px;
+        font-weight: bold;
+        font-size: 13px;
+    
+    }
+    
+    .fechar {
+        display: none;
+    }
+    
+    .btn-saiba-mais:hover {
+        background-color: var(--roxo-principal);
+        color: var(--branco);
+    }
+
+
+    /* CLASSE ACTIVE*/
+
+    .active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 450px;
+        width: 450px;
+        backdrop-filter: blur(5px);
+        border: solid 3px var(--roxo-principal);
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        padding: 2% 10%;
+        background-color: rgba(255, 255, 255, 0.6);
+        /* Fundo com transparência */
+        backdrop-filter: blur(15px);
+        /* Desfoque do fundo */
+        z-index: 1020;
+    }
+
+    .active h2 {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .active .descricao-atuacao {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .active .fechar {
+        display: block;
+    }
+
+    .active .saiba-mais {
+        display: none;
+    }
+
+    .active .icon-atuacao {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    /*FINAL*/
+    .final-conteudo {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .globo {
+        display: none;
+    }
+
+    .box-converse {
+        width: 300px;
+    }
+
+    /*RODAPÉ*/
+
+    .rodape {
+        text-align: center;
+        padding: 90px 10px;
+    }
+
+    .marca-rodape {
+        width: 300;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .endereco p {
+        font-size: 16px;
+    }
+
+    /*LGPD*/
+
+    #pg4 {
+        margin-bottom: 5rem;
+    }
+
+    .lgpd {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 50px;
+
+    }
+
+    .textos-lgpd {
+        width: 450px;
+    }
+
+    .texto-lgpd-principal {
+        font-size: 25px;
+        color: #ffffff;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .texto-lgpd-complementar {
+        font-size: 16px;
+        color: var(--roxo-principal);
+        font-weight: bold;
+        text-align: justify;
+    }
+
+    .imgs-lgpd {
+        display: flex;
+        max-width: 300px;
+    }
+
+    .img-lgpd {
+        width: 200px
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    /*LGPD*/
+
+    #pg4 {
+        margin-bottom: 5rem;
+    }
+
+    .lgpd {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 50px;
+
+    }
+
+    .textos-lgpd {
+        width: 300px;
+    }
+
+    .texto-lgpd-principal {
+        font-size: 18px;
+        color: #ffffff;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .texto-lgpd-complementar {
+        font-size: 15px;
+        color: var(--roxo-principal);
+        font-weight: bold;
+        text-align: justify;
+    }
+
+    .imgs-lgpd {
+        display: flex;
+        max-width: 300px;
+    }
+
+    .img-lgpd {
+        width: 150px
+    }
+
+     /* CLASSE ACTIVE*/
+
+     .active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 320px;
+        width: 320px;
+        backdrop-filter: blur(5px);
+        border: solid 3px var(--roxo-principal);
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        padding: 4%;
+        background-color: rgba(255, 255, 255, 0.6);
+        /* Fundo com transparência */
+        backdrop-filter: blur(15px);
+        /* Desfoque do fundo */
+        z-index: 1020;
+    }
+
+    .active h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .active .descricao-atuacao {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .active .fechar {
+        display: block;
+    }
+
+    .active .saiba-mais {
+        display: none;
+    }
+
+    .active .icon-atuacao {
+        margin-bottom: 10px;
+    }
+
+
 }
